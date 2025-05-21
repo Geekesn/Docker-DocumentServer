@@ -13,7 +13,7 @@ services:
       - DB_PORT=${DB_PORT}
       - DB_NAME=${DB_NAME}
       - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_PWD=${DB_PASSWORD}
       - AMQP_URI=${AMQP_URI}
       # Uncomment lines below to enable JSON Web Token validation
       # - JWT_ENABLED=${JWT_ENABLED}
