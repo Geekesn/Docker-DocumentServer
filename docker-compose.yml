@@ -16,10 +16,10 @@ services:
       - DB_PWD=${DB_PASSWORD}
       - AMQP_URI=${AMQP_URI}
       # Uncomment lines below to enable JSON Web Token validation
-      # - JWT_ENABLED=${JWT_ENABLED}
-      # - JWT_SECRET=${JWT_SECRET}
-      # - JWT_HEADER=${JWT_HEADER}
-      # - JWT_IN_BODY=${JWT_IN_BODY}
+      - JWT_ENABLED=${JWT_ENABLED}
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_HEADER=${JWT_HEADER}
+      - JWT_IN_BODY=${JWT_IN_BODY}
     ports:
       - '${ONLYOFFICE_HTTP_PORT}:80'
       - '${ONLYOFFICE_HTTPS_PORT}:443'
